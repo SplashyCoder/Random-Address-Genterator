@@ -19,13 +19,13 @@ class Address ():
                 # return(firstPart)   
 
             def cl(): # returns the number of the cl
-                firstPart.append(rm.randint(0,170))
+                firstPart.append(rm.randint(1,80))
                 firstPart.append(1)
                 # print(cl_str, '3')
                 # return(firstPart)
                 
             def kr():# returns the number of the kr
-                firstPart.append(rm.randint(0,120))
+                firstPart.append(rm.randint(1,80))
                 firstPart.append(2)
                 # print(kr_str),'3' 
                 # return(firstPart)
@@ -41,9 +41,9 @@ class Address ():
         
         def cardinal():#generates south or north
             direcction = ['sur','norte']
-            return(direcction[rm.randrange(0,1)])
+            return(direcction[rm.randrange(1,2)]) # Takes one of the two options in the list
         
-        def nomen (dire):
+        def nomen (dire):# Depending of what number returns pick it returns Cl or Kr 
             if dire == 1:
                 return('Cl')
             if dire == 2:

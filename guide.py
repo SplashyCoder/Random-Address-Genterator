@@ -41,7 +41,7 @@ class Address ():
         
         def cardinal():#generates south or north
             direcction = ['sur','norte']
-            return(direcction[rm.randrange(1,2)]) # Takes one of the two options in the list
+            return(direcction[rm.randrange(0,2)]) # Takes one of the two options in the list
         
         def nomen (dire):# Depending of what number returns pick it returns Cl or Kr 
             if dire == 1:
